@@ -3,40 +3,89 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Preahvihear , sans-serif;
 }
 
-/* ---------------- Nav-bar -----------------*/
-.Home {
+section {
     height: 100vh;
     width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: rgb(40, 57, 65);
-}
-.Home nav {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
+    justify-content: center;
     align-items: center;
 }
 
-.Home ul {
+/* ------------------- header ----------------------- */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: rgba(5, 10, 12, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #0ef;
+}
+/* ---------------- Section Home -----------------*/
+
+.home {
+background-image: url(/img/background-home.png);
+    
+}
+
+/* ----------------------------------------------*/
+
+/* ---------------- Nav-bar -----------------*/
+
+.home nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50px;
+    padding: 0 30px;
+    
+}
+
+.home ul {
     list-style: none;
     display: flex;
 }
 
-.Home a {
+.home a {
     text-decoration: none;
     color: #ffffff;
     border-radius: 10px;
 }
 
-.Home ul a {
+.home ul a {
     padding: 0 0.8rem;
 }
 
-.Home nav ul a:hover {
+.home nav ul a:hover {
     background-color: rgba(0, 0, 0, 0.3);;
 }
 /* -----------------------------------------*/
