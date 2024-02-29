@@ -49,7 +49,8 @@ nav a {
     transition: .3s;
 }
 
-nav a:hover {
+nav a:hover, 
+.active {
     color: #0ef;
 }
 /* ---------------- Section Home -----------------*/
